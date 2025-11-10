@@ -1,0 +1,5 @@
+/* src/app/shared/components/header/header.component.scss */
+
+:host {
+  display: block;
+}

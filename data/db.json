@@ -1,0 +1,505 @@
+{
+  "products": [
+    {
+      "id": "HP-LAP-001",
+      "sku": "HP15PAV2023",
+      "name": "HP Pavilion 15-eh3000",
+      "slug": "hp-pavilion-15-eh3000",
+      "brand": "HP",
+      "brandId": "hp",
+      "category": "Ordinateurs Portables",
+      "categoryId": "laptops",
+      "subCategory": "Laptops Gaming",
+      "price": 450000,
+      "oldPrice": 520000,
+      "currency": "FCFA",
+      "discount": 13,
+      "inStock": true,
+      "stockQuantity": 12,
+      "lowStock": false,
+      "images": {
+        "thumbnail": "/assets/images/products/hp-pavilion-thumb.jpg",
+        "main": "/assets/images/products/hp-pavilion-main.jpg",
+        "gallery": [
+          "/assets/images/products/hp-pavilion-1.jpg",
+          "/assets/images/products/hp-pavilion-2.jpg",
+          "/assets/images/products/hp-pavilion-3.jpg"
+        ]
+      },
+      "description": {
+        "short": "Ordinateur portable HP Pavilion 15 pouces, idéal pour le gaming et le multimédia.",
+        "long": "Le HP Pavilion 15-eh3000 est un ordinateur portable polyvalent conçu pour offrir des performances exceptionnelles. Doté d'un processeur Intel Core i5 de 12ème génération et de 8 Go de RAM, il gère facilement le multitâche et les applications exigeantes."
+      },
+      "specifications": {
+        "processor": {
+          "brand": "Intel",
+          "model": "Core i5-12450H",
+          "generation": "12ème Gen",
+          "cores": 8,
+          "speed": "2.0 GHz (up to 4.4 GHz)"
+        },
+        "memory": {
+          "size": "8 GB",
+          "type": "DDR4",
+          "expandable": true,
+          "maxMemory": "16 GB"
+        },
+        "storage": {
+          "type": "SSD",
+          "size": "512 GB",
+          "expandable": false
+        },
+        "display": {
+          "size": "15.6\"",
+          "resolution": "1920 x 1080 (Full HD)",
+          "type": "IPS",
+          "touchscreen": false
+        },
+        "graphics": {
+          "type": "Intégrée",
+          "model": "Intel UHD Graphics"
+        },
+        "os": "Windows 11 Home",
+        "weight": "1.75 kg",
+        "color": "Silver",
+        "warranty": "1 an"
+      },
+      "features": [
+        "Webcam HD 720p",
+        "Clavier rétroéclairé",
+        "Audio Bang & Olufsen",
+        "Fast Charge"
+      ],
+      "included": [
+        "Ordinateur HP Pavilion 15",
+        "Chargeur 65W",
+        "Guide de démarrage",
+        "Carte de garantie"
+      ],
+      "rating": {
+        "average": 4.5,
+        "count": 28,
+        "distribution": {
+          "5": 18,
+          "4": 7,
+          "3": 2,
+          "2": 1,
+          "1": 0
+        }
+      },
+      "badges": ["promo", "popular"],
+      "tags": ["gaming", "étudiant", "multimédia"],
+      "featured": true,
+      "newArrival": false,
+      "bestSeller": true,
+      "relatedProducts": ["DELL-LAP-001", "ASUS-LAP-001"],
+      "seo": {
+        "metaTitle": "HP Pavilion 15 - Ordinateur Portable Gaming | Premice Computer",
+        "metaDescription": "Découvrez le HP Pavilion 15, ordinateur portable gaming à prix imbattable. Intel Core i5, 8GB RAM, 512GB SSD. Livraison Cameroun.",
+        "keywords": ["hp pavilion", "ordinateur portable", "gaming", "cameroun"]
+      },
+      "shipping": {
+        "freeShipping": false,
+        "weight": 2.5,
+        "dimensions": {
+          "length": 40,
+          "width": 28,
+          "height": 5
+        },
+        "deliveryTime": "2-3 jours (Yaoundé/Douala)"
+      },
+      "availability": {
+        "online": true,
+        "inStore": true,
+        "stores": ["Yaoundé Centre"]
+      },
+      "createdAt": "2025-01-15T10:30:00Z",
+      "updatedAt": "2025-11-01T14:20:00Z"
+    },
+    {
+      "id": "DELL-LAP-001",
+      "sku": "DELL-INS15",
+      "name": "Dell Inspiron 15 3520",
+      "slug": "dell-inspiron-15-3520",
+      "brand": "Dell",
+      "brandId": "dell",
+      "category": "Ordinateurs Portables",
+      "categoryId": "laptops",
+      "price": 380000,
+      "currency": "FCFA",
+      "discount": 0,
+      "inStock": true,
+      "stockQuantity": 8,
+      "lowStock": false,
+      "images": {
+        "thumbnail": "/assets/images/products/dell-inspiron-thumb.jpg",
+        "main": "/assets/images/products/dell-inspiron-main.jpg",
+        "gallery": [
+          "/assets/images/products/dell-inspiron-1.jpg",
+          "/assets/images/products/dell-inspiron-2.jpg"
+        ]
+      },
+      "description": {
+        "short": "Dell Inspiron 15 - Parfait pour la bureautique et les études.",
+        "long": "Le Dell Inspiron 15 3520 offre un excellent rapport qualité-prix pour les étudiants et professionnels. Avec son écran 15.6 pouces et son processeur Intel Core i3, il est idéal pour la bureautique quotidienne."
+      },
+      "specifications": {
+        "processor": {
+          "brand": "Intel",
+          "model": "Core i3-1115G4",
+          "generation": "11ème Gen",
+          "cores": 2,
+          "speed": "3.0 GHz (up to 4.1 GHz)"
+        },
+        "memory": {
+          "size": "8 GB",
+          "type": "DDR4",
+          "expandable": true,
+          "maxMemory": "16 GB"
+        },
+        "storage": {
+          "type": "SSD",
+          "size": "256 GB",
+          "expandable": true
+        },
+        "display": {
+          "size": "15.6\"",
+          "resolution": "1920 x 1080 (Full HD)",
+          "type": "LED",
+          "touchscreen": false
+        },
+        "os": "Windows 11 Home",
+        "weight": "1.85 kg",
+        "color": "Carbon Black",
+        "warranty": "1 an"
+      },
+      "features": [
+        "Webcam HD",
+        "Lecteur carte SD",
+        "Wi-Fi 6"
+      ],
+      "included": [
+        "Ordinateur Dell Inspiron 15",
+        "Chargeur 45W",
+        "Documentation"
+      ],
+      "rating": {
+        "average": 4.2,
+        "count": 15
+      },
+      "badges": ["bestseller"],
+      "tags": ["bureautique", "étudiant"],
+      "featured": false,
+      "newArrival": false,
+      "bestSeller": true,
+      "relatedProducts": ["HP-LAP-001", "LENOVO-LAP-001"],
+      "seo": {
+        "metaTitle": "Dell Inspiron 15 - PC Portable Bureautique | Premice",
+        "metaDescription": "Dell Inspiron 15 3520 - Ordinateur portable idéal études et travail. Core i3, 8GB RAM, 256GB SSD. Prix compétitif Cameroun.",
+        "keywords": ["dell inspiron", "ordinateur portable", "bureautique"]
+      },
+      "shipping": {
+        "freeShipping": true,
+        "weight": 2.3,
+        "dimensions": {
+          "length": 38,
+          "width": 26,
+          "height": 4
+        },
+        "deliveryTime": "2-3 jours"
+      },
+      "availability": {
+        "online": true,
+        "inStore": true,
+        "stores": ["Yaoundé Centre"]
+      },
+      "createdAt": "2025-02-20T09:15:00Z",
+      "updatedAt": "2025-10-28T11:30:00Z"
+    },
+    {
+      "id": "HP-PRINT-001",
+      "sku": "HP-DJ2820",
+      "name": "HP DeskJet 2820e",
+      "slug": "hp-deskjet-2820e",
+      "brand": "HP",
+      "brandId": "hp",
+      "category": "Imprimantes",
+      "categoryId": "printers",
+      "subCategory": "Jet d'encre",
+      "price": 85000,
+      "oldPrice": 95000,
+      "currency": "FCFA",
+      "discount": 11,
+      "inStock": true,
+      "stockQuantity": 25,
+      "lowStock": false,
+      "images": {
+        "thumbnail": "/assets/images/products/hp-deskjet-thumb.jpg",
+        "main": "/assets/images/products/hp-deskjet-main.jpg",
+        "gallery": [
+          "/assets/images/products/hp-deskjet-1.jpg"
+        ]
+      },
+      "description": {
+        "short": "Imprimante multifonction HP DeskJet 2820e - Impression, copie, scan.",
+        "long": "L'imprimante HP DeskJet 2820e est parfaite pour un usage domestique ou petit bureau. Avec la connectivité Wi-Fi et HP Smart App, imprimez facilement depuis votre smartphone. Incluant 6 mois d'encre HP Instant Ink."
+      },
+      "specifications": {
+        "type": "Jet d'encre",
+        "functions": "Impression, Copie, Scan",
+        "printSpeed": "7.5 ppm (noir), 5.5 ppm (couleur)",
+        "printResolution": "4800 x 1200 dpi",
+        "scanResolution": "1200 x 1200 dpi",
+        "connectivity": "Wi-Fi, USB 2.0",
+        "paperSize": "A4, Lettre, Legal",
+        "inputTray": "60 feuilles",
+        "dimensions": "42.5 x 30.4 x 15.3 cm",
+        "weight": "3.42 kg",
+        "warranty": "1 an"
+      },
+      "features": [
+        "Wi-Fi intégré",
+        "HP Smart App",
+        "6 mois HP Instant Ink inclus",
+        "Impression recto"
+      ],
+      "included": [
+        "Imprimante HP DeskJet 2820e",
+        "Cartouches de démarrage",
+        "Câble USB",
+        "Guide d'installation"
+      ],
+      "rating": {
+        "average": 4.3,
+        "count": 42
+      },
+      "badges": ["promo"],
+      "tags": ["imprimante", "wifi", "multifonction"],
+      "featured": true,
+      "newArrival": false,
+      "bestSeller": true,
+      "relatedProducts": ["CANON-PRINT-001", "HP-INK-001"],
+      "seo": {
+        "metaTitle": "HP DeskJet 2820e - Imprimante WiFi Multifonction | Premice",
+        "metaDescription": "Imprimante HP DeskJet 2820e WiFi tout-en-un. Impression, copie, scan. 6 mois d'encre inclus. Livraison Cameroun.",
+        "keywords": ["hp deskjet", "imprimante wifi", "multifonction"]
+      },
+      "shipping": {
+        "freeShipping": true,
+        "weight": 4.5,
+        "dimensions": {
+          "length": 45,
+          "width": 35,
+          "height": 20
+        },
+        "deliveryTime": "2-3 jours"
+      },
+      "availability": {
+        "online": true,
+        "inStore": true,
+        "stores": ["Yaoundé Centre"]
+      },
+      "createdAt": "2025-03-10T14:20:00Z",
+      "updatedAt": "2025-11-05T09:45:00Z"
+    },
+    {
+      "id": "ASUS-LAP-001",
+      "sku": "ASUS-VM15",
+      "name": "Asus Vivobook 15 X1502ZA",
+      "slug": "asus-vivobook-15-x1502za",
+      "brand": "Asus",
+      "brandId": "asus",
+      "category": "Ordinateurs Portables",
+      "categoryId": "laptops",
+      "price": 420000,
+      "currency": "FCFA",
+      "discount": 0,
+      "inStock": true,
+      "stockQuantity": 6,
+      "lowStock": true,
+      "images": {
+        "thumbnail": "/assets/images/products/asus-vivobook-thumb.jpg",
+        "main": "/assets/images/products/asus-vivobook-main.jpg",
+        "gallery": [
+          "/assets/images/products/asus-vivobook-1.jpg",
+          "/assets/images/products/asus-vivobook-2.jpg"
+        ]
+      },
+      "description": {
+        "short": "Asus Vivobook 15 - Design élégant, performance optimale.",
+        "long": "L'Asus Vivobook 15 X1502ZA combine style et performance. Son écran NanoEdge offre un ratio écran/corps impressionnant de 84%, idéal pour la productivité et le divertissement."
+      },
+      "specifications": {
+        "processor": {
+          "brand": "Intel",
+          "model": "Core i5-1235U",
+          "generation": "12ème Gen",
+          "cores": 10,
+          "speed": "1.3 GHz (up to 4.4 GHz)"
+        },
+        "memory": {
+          "size": "8 GB",
+          "type": "DDR4",
+          "expandable": true
+        },
+        "storage": {
+          "type": "SSD",
+          "size": "512 GB",
+          "expandable": false
+        },
+        "display": {
+          "size": "15.6\"",
+          "resolution": "1920 x 1080 (Full HD)",
+          "type": "IPS",
+          "touchscreen": false
+        },
+        "os": "Windows 11 Home",
+        "weight": "1.7 kg",
+        "color": "Quiet Blue",
+        "warranty": "1 an"
+      },
+      "features": [
+        "Écran NanoEdge",
+        "Webcam HD",
+        "Charge rapide",
+        "Lecteur d'empreintes"
+      ],
+      "included": [
+        "Asus Vivobook 15",
+        "Chargeur",
+        "Documentation"
+      ],
+      "rating": {
+        "average": 4.6,
+        "count": 19
+      },
+      "badges": ["new"],
+      "tags": ["design", "portable", "performance"],
+      "featured": false,
+      "newArrival": true,
+      "bestSeller": false,
+      "relatedProducts": ["HP-LAP-001", "DELL-LAP-001"],
+      "seo": {
+        "metaTitle": "Asus Vivobook 15 - PC Portable Design | Premice Computer",
+        "metaDescription": "Asus Vivobook 15 X1502ZA - Design élégant NanoEdge. Core i5 12ème Gen, 8GB RAM, 512GB SSD. Cameroun.",
+        "keywords": ["asus vivobook", "ordinateur portable", "design"]
+      },
+      "shipping": {
+        "freeShipping": false,
+        "weight": 2.2,
+        "dimensions": {
+          "length": 39,
+          "width": 27,
+          "height": 4
+        },
+        "deliveryTime": "2-3 jours"
+      },
+      "availability": {
+        "online": true,
+        "inStore": true,
+        "stores": ["Yaoundé Centre"]
+      },
+      "createdAt": "2025-10-01T10:00:00Z",
+      "updatedAt": "2025-11-06T16:20:00Z"
+    },
+    {
+      "id": "LENOVO-LAP-001",
+      "sku": "LEN-IP3-15",
+      "name": "Lenovo IdeaPad 3 15ITL6",
+      "slug": "lenovo-ideapad-3-15itl6",
+      "brand": "Lenovo",
+      "brandId": "lenovo",
+      "category": "Ordinateurs Portables",
+      "categoryId": "laptops",
+      "price": 360000,
+      "currency": "FCFA",
+      "discount": 0,
+      "inStock": true,
+      "stockQuantity": 10,
+      "lowStock": false,
+      "images": {
+        "thumbnail": "/assets/images/products/lenovo-ideapad-thumb.jpg",
+        "main": "/assets/images/products/lenovo-ideapad-main.jpg",
+        "gallery": [
+          "/assets/images/products/lenovo-ideapad-1.jpg"
+        ]
+      },
+      "description": {
+        "short": "Lenovo IdeaPad 3 - Fiable et abordable pour tous les jours.",
+        "long": "Le Lenovo IdeaPad 3 15ITL6 est conçu pour les utilisateurs recherchant fiabilité et performance à petit prix. Parfait pour les étudiants et la bureautique quotidienne."
+      },
+      "specifications": {
+        "processor": {
+          "brand": "Intel",
+          "model": "Core i3-1115G4",
+          "generation": "11ème Gen",
+          "speed": "3.0 GHz"
+        },
+        "memory": {
+          "size": "4 GB",
+          "type": "DDR4",
+          "expandable": true
+        },
+        "storage": {
+          "type": "HDD",
+          "size": "1 TB",
+          "expandable": false
+        },
+        "display": {
+          "size": "15.6\"",
+          "resolution": "1920 x 1080 (Full HD)",
+          "type": "TN",
+          "touchscreen": false
+        },
+        "os": "Windows 11 Home",
+        "weight": "1.85 kg",
+        "color": "Arctic Grey",
+        "warranty": "1 an"
+      },
+      "features": [
+        "Webcam avec privacy shutter",
+        "Dolby Audio",
+        "Wi-Fi 5"
+      ],
+      "included": [
+        "Lenovo IdeaPad 3",
+        "Chargeur",
+        "Guide"
+      ],
+      "rating": {
+        "average": 4.0,
+        "count": 23
+      },
+      "badges": [],
+      "tags": ["abordable", "étudiant", "bureautique"],
+      "featured": false,
+      "newArrival": false,
+      "bestSeller": false,
+      "relatedProducts": ["DELL-LAP-001", "HP-LAP-001"],
+      "seo": {
+        "metaTitle": "Lenovo IdeaPad 3 - PC Portable Abordable | Premice",
+        "metaDescription": "Lenovo IdeaPad 3 15ITL6 - Ordinateur portable fiable à prix accessible. Core i3, 4GB RAM, 1TB HDD. Cameroun.",
+        "keywords": ["lenovo ideapad", "ordinateur portable", "abordable"]
+      },
+      "shipping": {
+        "freeShipping": true,
+        "weight": 2.4,
+        "dimensions": {
+          "length": 38,
+          "width": 27,
+          "height": 5
+        },
+        "deliveryTime": "2-3 jours"
+      },
+      "availability": {
+        "online": true,
+        "inStore": true,
+        "stores": ["Yaoundé Centre"]
+      },
+      "createdAt": "2025-04-12T11:30:00Z",
+      "updatedAt": "2025-10-20T14:10:00Z"
+    }
+  ],
+  "total": 5,
+  "lastUpdated": "2025-11-07T00:00:00Z"
+}

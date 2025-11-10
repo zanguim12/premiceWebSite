@@ -1,0 +1,279 @@
+// src/app/features/home/home.component.html
+
+<div class="min-h-screen">
+  <!-- Hero Banner / Slider -->
+  <section class="relative bg-premice-gray-900 overflow-hidden">
+    <div class="relative h-[300px] md:h-[400px] lg:h-[500px]">
+      <!-- Slides -->
+      @for (slide of heroSlides; track $index) {
+        <div 
+          [class.opacity-100]="currentSlide() === $index"
+          [class.opacity-0]="currentSlide() !== $index"
+          class="absolute inset-0 transition-opacity duration-500"
+        >
+          <img 
+            [src]="slide.image" 
+            [alt]="slide.title"
+            class="w-full h-full object-cover"
+          />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent">
+            <div class="container-custom h-full flex items-center">
+              <div class="max-w-2xl text-white animate-fade-in">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-4">
+                  {{ slide.title }}
+                </h1>
+                <p class="text-xl md:text-2xl mb-8">
+                  {{ slide.subtitle }}
+                </p>
+                <a 
+                  [routerLink]="slide.link"
+                  class="btn btn-primary btn-lg inline-flex"
+                >
+                  {{ slide.cta }} →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+
+      <!-- Navigation arrows -->
+      <button 
+        (click)="prevSlide()"
+        class="absolute left-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-3 rounded-full transition-all z-10"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+        </svg>
+      </button>
+      <button 
+        (click)="nextSlide()"
+        class="absolute right-4 top-1/2 -translate-y-1/2 bg-white/30 hover:bg-white/50 backdrop-blur-sm text-white p-3 rounded-full transition-all z-10"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </button>
+
+      <!-- Dots indicator -->
+      <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+        @for (slide of heroSlides; track $index) {
+          <button
+            (click)="goToSlide($index)"
+            [class.bg-white]="currentSlide() === $index"
+            [class.bg-white/40]="currentSlide() !== $index"
+            class="w-3 h-3 rounded-full transition-all"
+          ></button>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section bg-white">
+    <div class="container-custom">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-premice-gray-900 mb-4">
+          Nos Catégories
+        </h2>
+        <p class="text-lg text-premice-gray-600">
+          Trouvez le produit parfait pour vos besoins
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        @for (category of categories; track category.id) {
+          <a 
+            [routerLink]="['/products']"
+            [queryParams]="{ category: category.id }"
+            class="card card-hover overflow-hidden group"
+          >
+            <div class="relative h-40 overflow-hidden">
+              <img 
+                [src]="category.image" 
+                [alt]="category.name"
+                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+                <span class="text-4xl mb-2">{{ category.icon }}</span>
+                <h3 class="text-lg font-bold text-center px-2">{{ category.name }}</h3>
+                <p class="text-sm opacity-90 mt-1">{{ category.description }}</p>
+              </div>
+            </div>
+          </a>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Promotions Section -->
+  @if (promotions().length > 0) {
+    <section class="section bg-premice-red">
+      <div class="container-custom">
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-2">
+              🔥 Promotions
+            </h2>
+            <p class="text-white/90 text-lg">
+              Profitez de nos offres exceptionnelles
+            </p>
+          </div>
+          <a 
+            routerLink="/promotions"
+            class="hidden md:inline-flex btn bg-white text-premice-red hover:bg-premice-gray-100"
+          >
+            Voir tout →
+          </a>
+        </div>
+
+        <div class="products-grid">
+          @for (product of promotions().slice(0, 4); track product.id) {
+            <app-product-card [product]="product" />
+          }
+        </div>
+
+        <div class="text-center mt-8 md:hidden">
+          <a 
+            routerLink="/promotions"
+            class="btn bg-white text-premice-red w-full"
+          >
+            Voir toutes les promotions →
+          </a>
+        </div>
+      </div>
+    </section>
+  }
+
+  <!-- Featured Products Section -->
+  @if (featuredProducts().length > 0) {
+    <section class="section bg-white">
+      <div class="container-custom">
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-premice-gray-900 mb-2">
+              ⭐ Produits en Vedette
+            </h2>
+            <p class="text-premice-gray-600 text-lg">
+              Notre sélection des meilleurs produits
+            </p>
+          </div>
+          <a 
+            routerLink="/products"
+            class="hidden md:inline-flex btn btn-outline"
+          >
+            Voir tout →
+          </a>
+        </div>
+
+        <div class="products-grid">
+          @for (product of featuredProducts(); track product.id) {
+            <app-product-card [product]="product" />
+          }
+        </div>
+      </div>
+    </section>
+  }
+
+  <!-- Services / Features Section -->
+  <section class="section bg-premice-gray-50">
+    <div class="container-custom">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-start gap-4 p-6 bg-white rounded-lg">
+          <div class="text-4xl">🚚</div>
+          <div>
+            <h3 class="font-bold text-premice-gray-900 mb-2">Livraison Rapide</h3>
+            <p class="text-sm text-premice-gray-600">
+              2-3 jours à Yaoundé et Douala
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-6 bg-white rounded-lg">
+          <div class="text-4xl">🔒</div>
+          <div>
+            <h3 class="font-bold text-premice-gray-900 mb-2">Paiement Sécurisé</h3>
+            <p class="text-sm text-premice-gray-600">
+              Mobile Money, Cartes bancaires
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-6 bg-white rounded-lg">
+          <div class="text-4xl">✅</div>
+          <div>
+            <h3 class="font-bold text-premice-gray-900 mb-2">Garantie Officielle</h3>
+            <p class="text-sm text-premice-gray-600">
+              Tous nos produits sont garantis
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4 p-6 bg-white rounded-lg">
+          <div class="text-4xl">📞</div>
+          <div>
+            <h3 class="font-bold text-premice-gray-900 mb-2">Support Client</h3>
+            <p class="text-sm text-premice-gray-600">
+              Disponible du lundi au samedi
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers Section -->
+  @if (bestSellers().length > 0) {
+    <section class="section bg-white">
+      <div class="container-custom">
+        <div class="flex items-center justify-between mb-8">
+          <div>
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-premice-gray-900 mb-2">
+              🏆 Meilleures Ventes
+            </h2>
+            <p class="text-premice-gray-600 text-lg">
+              Les produits les plus populaires
+            </p>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          @for (product of bestSellers().slice(0, 4); track product.id) {
+            <app-product-card [product]="product" />
+          }
+        </div>
+      </div>
+    </section>
+  }
+
+  <!-- Newsletter Section -->
+  <section class="section bg-premice-blue">
+    <div class="container-custom">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-4">
+          📧 Restez Informé
+        </h2>
+        <p class="text-white/90 text-lg mb-8">
+          Inscrivez-vous à notre newsletter et recevez nos meilleures offres
+        </p>
+        <form class="flex flex-col md:flex-row gap-4 max-w-xl mx-auto">
+          <input 
+            type="email" 
+            placeholder="Votre adresse email"
+            class="flex-1 px-6 py-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-premice-yellow"
+          />
+          <button 
+            type="submit"
+            class="btn bg-premice-yellow text-premice-gray-900 hover:bg-premice-yellow-dark font-bold px-8"
+          >
+            S'inscrire
+          </button>
+        </form>
+        <p class="text-white/70 text-sm mt-4">
+          🎁 Recevez un coupon de réduction sur votre première commande
+        </p>
+      </div>
+    </div>
+  </section>
+</div>

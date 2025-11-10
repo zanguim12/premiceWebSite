@@ -1,0 +1,5 @@
+/* src/app/features/home/home.component.scss */
+
+:host {
+  display: block;
+}
